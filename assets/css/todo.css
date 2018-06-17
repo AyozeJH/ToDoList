@@ -1,0 +1,122 @@
+body {
+    background-color: rgb(100, 98, 98);
+}
+
+#heading {
+    max-width: 500px;
+    background-color:rgb(107, 104, 104);
+    font-size: 50px;
+    text-align: center;  
+    margin: 0 auto; 
+    padding: 50px 0 50px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+#form {
+    overflow: hidden;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+#newTodo {
+    font-size: 18px;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-right: 5px;
+}
+
+#newTodo:focus {
+    background-color: white;
+    border: 2px solid black;
+    outline: none;
+}
+
+button {
+    display: inline-block;
+    height: inherit;
+    background-color:  grey;
+    border: none;
+    margin: none;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+}
+
+button:active {
+    border: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    list-style: upper-roman;
+    text-align: justify;
+}
+
+li {
+    background-color: darkgray;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    padding-left: 10px;
+    list-style-position: inside;
+}
+
+li:nth-child(2n) {
+    background-color: lightgray;
+}
+
+i {
+    background: black;
+    height: 30px;
+    text-align: center;
+    color: white;
+    width: 0;
+    float: right;
+    display: block;
+    transition: 0.3s linear;
+    opacity: 0;
+    cursor: pointer;
+    line-height: 30px !important;
+}
+
+li:hover i{
+    width: 30px; 
+    opacity: 1.0;
+}
+
+.important {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: red !important;
+}
+
+#editText {
+    display: none;
+    margin-right: 8px;
+}
+
+#saveTodo {
+    display: none;
+    height: 20px;
+}
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
